@@ -124,7 +124,9 @@
     
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/71c076d4515d29ff22878f2ac/353bf5958c77caeca7350d793.js");</script>
+    <script>
+      
+    </script>
 
   </head>
 
@@ -143,27 +145,27 @@
     <!--</button>-->
     
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-newsletter">
-    		<div class="modal-content">
-    			<form action="/examples/actions/confirmation.php" method="post">
-    				<div class="modal-header">
-    					<h4>Get Notified </h4>	
-    					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
-    				</div>
-    				<div class="modal-body">					
-    					<p>Sign up for our <b>no spam</b> email list to hear about important updates and announcments</p>
-    					<div class="input-group">
-    						<input type="email" class="form-control" placeholder="Enter your email" required>
-    						<div class="input-group-append">
-    							<input type="submit" class="btn btn-primary" value="Subscribe">
-    						</div>
-    					</div>
-    				</div>
-    			</form>			
-    		</div>
-    	</div>
-    </div>
+    <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+    <!--  <div class="modal-dialog modal-newsletter">-->
+    <!--		<div class="modal-content">-->
+    <!--			<form action="/examples/actions/confirmation.php" method="post">-->
+    <!--				<div class="modal-header">-->
+    <!--					<h4>Get Notified </h4>	-->
+    <!--					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>-->
+    <!--				</div>-->
+    <!--				<div class="modal-body">					-->
+    <!--					<p>Sign up for our <b>no spam</b> email list to hear about important updates and announcments</p>-->
+    <!--					<div class="input-group">-->
+    <!--						<input type="email" class="form-control" placeholder="Enter your email" required>-->
+    <!--						<div class="input-group-append">-->
+    <!--							<input type="submit" class="btn btn-primary" value="Subscribe">-->
+    <!--						</div>-->
+    <!--					</div>-->
+    <!--				</div>-->
+    <!--			</form>			-->
+    <!--		</div>-->
+    <!--	</div>-->
+    <!--</div>-->
     
     
     
@@ -197,7 +199,7 @@
           <!--  <a class="nav-link" href="#">FAQ</a>-->
           <!--</li>-->
           <li class="nav-item">
-            <button class="btn btn-success nav-link text-light" data-toggle="modal" data-target="#exampleModal">Pre-Order now</button>
+            <button onclick="window.OpenPopUp()" class="btn btn-success nav-link text-light">Subscribe to Newsletter</button>
           </li>
         </ul>
       </div>
@@ -216,7 +218,7 @@
               <div class="vertical">
                 <h1 class="text-success" style="font-size:2.75rem">Scout Infinity</h1>
                 <p>Mobile communications re-imagined. The world's first IoT smartphone case.</p>
-                <button class="btn btn-success">Get Updates</button>
+                <button onclick="window.OpenPopUp()" class="btn btn-success">Get Updates</button>
               </div>
             </div>
             <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742612423931985930/Case_04.png" alt="First slide"></div>
@@ -229,7 +231,7 @@
               <div class="vertical">
                 <h1 class="text-success" style="font-size:2.25rem">Say Goodbye to your Phone Bill</h1>
                 <p>Free text and data. Absolutely no service related fees.</p>
-                <button class="btn btn-success">Get Updates</button>
+                <button onclick="window.OpenPopUp()" class="btn btn-success">Get Updates</button>
               </div>
             </div>
             <div class="col-sm-6"><img class="d-block w-100" style="margin-left: 1.5rem;" src="https://media.discordapp.net/attachments/624650696708325397/742777181608083566/New_Project_3.png" alt="First slide"></div>
@@ -242,7 +244,7 @@
               <div class="vertical">
                 <h1 class="text-success" style="font-size:2.25rem">Never Lose your Phone</h1>
                 <p>Global location tracking when your phone dies.</p>
-                <button class="btn btn-success">Get Updates</button>
+                <button onclick="window.OpenPopUp()" class="btn btn-success">Get Updates</button>
               </div>
             </div>
             <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742776249226756256/New_Project_2.png" alt="First slide"></div>
@@ -254,7 +256,7 @@
               <div class="vertical">
                 <h1 class="text-success" style="font-size:2.25rem">Never Lose Functionality</h1>
                 <p>NFC wireless technlogy ensures your case is always powered.</p>
-                <button class="btn btn-success">Get Updates</button>
+                <button onclick="window.OpenPopUp()" class="btn btn-success">Get Updates</button>
               </div>
             </div>
             <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742781914733346978/New_Project_5.png" alt="First slide"></div>
@@ -387,7 +389,7 @@
       </div>
     </footer>
 
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -398,7 +400,7 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
-
+    
       <script>
       Holder.addTheme('thumb', {
         bg: '#55595c',
@@ -436,6 +438,68 @@
         } 
     }); 
     new WOW().init();
+    document.getElementById("")
     </script>
+        <script>
+            (function(){if(!window.$mcSite){$mcSite={};$mcSite.popup_form={settings:{base_url:"mc.us10.list-manage.com",list_id:"776ab62a0d",uuid:"71c076d4515d29ff22878f2ac",skip_install:""}};}})();
+      (function () {
+          if (window.$mcSite === undefined || window.$mcSite.popup_form === undefined) {
+              return;
+          }
+      
+          if (window.location.href.indexOf("checkout.shopify") >= 0) {
+              return;
+          }
+      
+          var scripts = document.getElementsByTagName("script");
+          for (var i = 0; i < scripts.length; i++) {
+              // look for src containing the old embed.js code and bail if it exists
+              if (scripts[i].getAttribute("src") === "//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" || scripts[i].getAttribute("src") === "//downloads.mailchimp.com/js/signup-forms/popup/embed.js") {
+                  return;
+              }
+          }
+      
+          var module = window.$mcSite.popup_form;
+      
+          if (module.installed === true) {
+              return;
+          }
+      
+          if (!module.settings) {
+              return;
+          }
+      
+          var settings = module.settings;
+      
+          if (!settings.base_url || !settings.uuid || !settings.list_id || settings.skip_install === "1") {
+              return;
+          }
+      
+          var script = document.createElement("script");
+      
+          script.src = "//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js";
+          script.type = "text/javascript";
+          script.onload = function () {
+              if (window.dojoRequire) {
+                  window.OpenPopUp = function(){
+                    window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": settings.base_url, "uuid": settings.uuid, "lid": settings.list_id, "uniqueMethods": true}); });
+                    document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+                    document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+
+                    
+                  }
+                  // setTimeout(function(){
+                  //   window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": settings.base_url, "uuid": settings.uuid, "lid": settings.list_id, "uniqueMethods": true}); });
+                  // },5000);
+                    
+              }
+          };
+      
+          document.body.appendChild(script);
+      
+          window.$mcSite.popup_form.installed = true;
+      }());
+
+//     </script>
   </body>
 </html>
