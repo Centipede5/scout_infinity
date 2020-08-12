@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Scout Infinity</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="dist/css/animate.css" />
+    <link href='https://fonts.googleapis.com/css?family=Bungee+Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto-Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+      * {
+        font-family:Montserrat;
+      }
+      h1{
+        font-family:Bungee !important;
+      }
+      .nav-link,.btn {
+        font-family:Montserrat !important;
+        font-weight:900 !important;
+      }
+      .text-success{
+       color:#a7e950!important; 
+      }
+      .vertical{
+        margin-top:50%;
+        transform:translate(0%,-50%);
+      }
+      .btn-success {
+        background-color:#a7e950!important;
+      }
+      .modal-newsletter {	
+	color: #999;
+	width: 625px;
+	max-width: 625px;
+	font-size: 15px;
+}
+.modal-newsletter .modal-content {
+	padding: 30px;
+	border-radius: 0;		
+	border: none;
+}
+.modal-newsletter .modal-header {
+	border-bottom: none;   
+	position: relative;
+	border-radius: 0;
+}
+.modal-newsletter h4 {
+	color: #000;
+	font-size: 30px;
+	margin: 0;
+	font-weight: bold;
+}
+.modal-newsletter .close {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	text-shadow: none;
+	opacity: 0.3;
+	font-size: 24px;
+}
+.modal-newsletter .close:hover {
+	opacity: 0.8;
+}
+.modal-newsletter .icon-box {
+	color: #7265ea;		
+	display: inline-block;
+	z-index: 9;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10px;
+}
+.modal-newsletter .icon-box i {
+	font-size: 110px;
+}
+.modal-newsletter .form-control, .modal-newsletter .btn {
+	min-height: 46px;
+	border-radius: 0;
+}
+.modal-newsletter .form-control {
+	box-shadow: none;
+	border-color: #dbdbdb;
+}
+.modal-newsletter .form-control:focus {
+	border-color: #f95858;
+	box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+}
+.modal-newsletter .btn {
+	color: #fff;
+	background: #f95858;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	padding: 6px 20px;
+	min-width: 150px;
+	margin-left: 6px !important;
+	border: none;
+}
+.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+	box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+	background: #f72222;
+	outline: none;
+}
+.modal-newsletter .input-group {
+	margin-top: 30px;
+}
+.hint-text {
+	margin: 100px auto;
+	text-align: center;
+}
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--
+      - cost
+      - credible
+      - service
+      - how we keep it charged
+      - 
+    -->
+    
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">-->
+    <!--  Launch demo modal-->
+    <!--</button>-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-newsletter">
+    		<div class="modal-content">
+    			<form action="/examples/actions/confirmation.php" method="post">
+    				<div class="modal-header">
+    					<h4>Get Notified </h4>	
+    					<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>&times;</span></button>
+    				</div>
+    				<div class="modal-body">					
+    					<p>Sign up for our <b>no spam</b> email list to hear about important updates and announcments</p>
+    					<div class="input-group">
+    						<input type="email" class="form-control" placeholder="Enter your email" required>
+    						<div class="input-group-append">
+    							<input type="submit" class="btn btn-primary" value="Subscribe">
+    						</div>
+    					</div>
+    				</div>
+    			</form>			
+    		</div>
+    	</div>
+    </div>
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="navbar-brand" href="#">
+        <h1 class="text-secondary" style="margin-left:35px;">
+          <!--<img src="https://media.discordapp.net/attachments/624650696708325397/742590360013897758/New_Project__1_-removebg-preview_1.png" height="50">-->
+          <img src="https://media.discordapp.net/attachments/624650696708325397/742591515963949116/New_Project__1_-removebg-preview_1.png" style="height:2.5rem;margin-bottom:0.5rem;    margin-right: -0.5rem;" >
+          Scout
+          <img src="https://media.discordapp.net/attachments/624650696708325397/742591513325994105/New_Project__1_-removebg-preview_1_-_Copy.png" style="height:2.5rem;margin-bottom:0.54rem;margin-left: -0.6rem;" >
+
+      </h1>
+        
+        <!--<p>IoT smartphone case</p>-->
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0" style="font-weight:bolder">
+          <!--<li class="nav-item active">-->
+          <!--  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+          <!--</li>-->
+          <!--<li class="nav-item">-->
+          <!--  <a class="nav-link" href="#">FAQ</a>-->
+          <!--</li>-->
+          <li class="nav-item">
+            <button class="btn btn-success nav-link text-light" data-toggle="modal" data-target="#exampleModal">Pre-Order now</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner bg-light text-secondary">
+        <div class="carousel-item active text-center">
+          <div class="row container" style="margin: auto;">
+            <div class="col-sm-6 text-center">
+              <div class="vertical">
+                <h1 class="text-success" style="font-size:2.75rem">Scout Infinity</h1>
+                <p>Mobile communications re-imagined. The world's first IoT smartphone case.</p>
+                <button class="btn btn-success">Get Updates</button>
+              </div>
+            </div>
+            <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742612423931985930/Case_04.png" alt="First slide"></div>
+          </div>
+        </div>
+        
+        <div class="carousel-item text-center">
+          <div class="row container" style="margin: auto;">
+            <div class="col-sm-6 text-center">
+              <div class="vertical">
+                <h1 class="text-success" style="font-size:2.25rem">Say Goodbye to your Phone Bill</h1>
+                <p>Free text and data. Absolutely no service related fees.</p>
+                <button class="btn btn-success">Get Updates</button>
+              </div>
+            </div>
+            <div class="col-sm-6"><img class="d-block w-100" style="margin-left: 1.5rem;" src="https://media.discordapp.net/attachments/624650696708325397/742777181608083566/New_Project_3.png" alt="First slide"></div>
+          </div>
+        </div>
+        
+        <div class="carousel-item text-center">
+          <div class="row container" style="margin: auto;">
+            <div class="col-sm-6 text-center">
+              <div class="vertical">
+                <h1 class="text-success" style="font-size:2.25rem">Never Lose your Phone</h1>
+                <p>Global location tracking when your phone dies.</p>
+                <button class="btn btn-success">Get Updates</button>
+              </div>
+            </div>
+            <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742776249226756256/New_Project_2.png" alt="First slide"></div>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="row container" style="margin: auto;">
+            <div class="col-sm-6 text-center">
+              <div class="vertical">
+                <h1 class="text-success" style="font-size:2.25rem">Never Lose Functionality</h1>
+                <p>NFC wireless technlogy ensures your case is always powered.</p>
+                <button class="btn btn-success">Get Updates</button>
+              </div>
+            </div>
+            <div class="col-sm-6"><img class="d-block w-100" src="https://media.discordapp.net/attachments/624650696708325397/742781914733346978/New_Project_5.png" alt="First slide"></div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+    <div class="wow fadeInUp p-3 p-md-5 m-md-3">
+      <div class="row p-3 p-md-5 m-md-3 text-center">
+        <i class="fa fa-comment col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Communicate Worldwide without WiFi or Service</b></span></i>
+        <i class="fa fa-globe col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Global Location Tracking</b></span></i>
+        <i class="fa fa-bolt col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Charged Wirelessly by Phone</b></span></i>
+        <i class="fa fa-battery-full col" style="font-size:48px;"><br><span style="font-size:20px;"><b>2+ Weeks Battery Life without Phone Power</b></span></i>
+        
+        
+        
+        
+      </div>
+      <div class="row p-3 p-md-5 m-md-3 text-center">
+        
+        <i class="fa fa-microchip col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Lightweight Construction</b></span></i>
+        <i class="fa fa-signal col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Connected via LoRaWAN</b></span></i>
+        <i class="fa fa-bluetooth col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Paired with Bluetooth</b></span></i>
+        <i class="fa fa-mobile col" style="font-size:48px;"><br><span style="font-size:20px;"><b>Android and Apple Support</b></span></i>
+      </div>
+      
+    </div>
+    <div class="row wow fadeInUp ">
+      <div class="col p-3 p-md-5 m-md-3">
+        <img style="width:80%;margin-bottom:10%;margin-left:10%;margin-top: -1.5rem;" src="https://media.discordapp.net/attachments/624650696708325397/742916231862157312/ear-field.png">
+      </div>
+      <div class="col p-3 p-md-5 m-md-3">
+        <h2>Cutting-Edge Features, Affordable price</h2><br>
+        <!--<h5><b>2000W/1700Wh/2500+ Cycles</b></h5><br>-->
+        <p>
+          The Scout Infinity was developed for the next generation of mobile communication. It can send texts and utilize data anywhere with the global LoRaWAN network and interface with user-created apps,<b> for a price less than $100</b>. The Infinity connects to both iPhone and Android devices using Bluetooth Low Energy and charges wirelessly with NFC. While designing the Infinity, we endeavored to create a sleek and easy to use piece of hardware with an intuitive interface to match.        
+        </p>
+      </div>
+    </div>
+    <div class="row wow fadeInUp ">
+      <div class="col p-3 p-md-5 m-md-3">
+        <h2>Built on the Most Trusted IoT Network</h2><br>
+        <p>
+          Since 2015, TheThingsNetwork has provided LoRaWAN service all over the world. <b>With over 12,000 gateways across 150 countries</b> and partners like Amazon and Cisco, TheThingsNetwork has become the standard for LoRaWAN networks. We plan to utilize this reliability and security to bring you the best experience possible.        
+        </p>
+      </div>
+      <div class="col p-3 p-md-5 m-md-3">
+        <!--<img src="./assets/stuff.png" style="    position: absolute;zoom: 0.3;left: 50rem;top: 37rem;">-->
+        <img class="w-100" src="https://media.discordapp.net/attachments/624650696708325397/742909144037589092/network-782707_960_720.png">
+      </div>
+    </div>
+    <div class="row wow fadeInUp ">
+      <div class="col p-3 p-md-5 m-md-3">
+        <img class="w-100" src="https://media.discordapp.net/attachments/624650696708325397/742922803141017600/c7c823330ec7d376ef4a7e896dd3-1451419.png">
+      </div>
+      <div class="col p-3 p-md-5 m-md-3">
+        <h2>Crowdsourced Communications</h2><br>
+        <p>
+          Scout believes in a truly open network for mobile communications, instead of a centralized and commercialized approach. That's why <b>we have dropped all service related fees</b>— no monthly bill , no subscription services, and certainly no hidden fees.
+          
+        </p>
+      </div>
+    </div>
+    <div class="wow fadeInUp row p-3 p-md-5 m-md-3 text-center" id="stats">
+      <div class="col-sm-4 col-xs-12">
+            <h1 id="numDiscord">1+</h1>
+            <p>Subscribers</p>
+       </div>
+       <div class="col-sm-4 col-xs-12">
+           <h1 id="subCount">1</h1>
+           <p>Days Until Kickstarter Launch</p>
+       </div>
+       <div class="col-sm-4 col-xs-12">
+         <h1 id="numMembers">1+</h1>
+         <p>Gateways Worldwide</p>
+       </div>
+     </div>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md text-center">
+            <p class="d-block mb-3 text-muted" style="margin-bottom: -15px!important;">&copy; Scout Electronics 2020</p>
+        </div>
+        <div class="col-6 col-md" style="display:none;">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Battery</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md" style="display:none;">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Privacy policy</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md" style="display:none;">
+          <h5>More Stuff</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md" style="display:none;">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+
+      <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+      var options = {
+      useEasting: true,
+      useGrouping: true,
+      separator: ',',
+      decimal: '.',
+      suffix: '+'
+    }
+     var options2 = {
+      useEasting: true,
+      useGrouping: true,
+      separator: ',',
+      decimal: '.',
+      suffix: ''
+    }
+     var subCount = new CountUp("subCount", 0, Math.floor((new Date("Nov 1 2020")-new Date())/(1000*60*60*24)), 0, 2.5,options2);
+     var disCount = new CountUp("numDiscord", 0, 230, 0, 2.5,options);
+     var memCount = new CountUp("numMembers", 0, 12000, 0, 2.5,options);
+     var started = false;
+     
+     $(window).on('scroll', function() { 
+        if ($(window).scrollTop() >= $('#stats').offset().top - window.innerHeight) { 
+            
+           if(!started){
+              subCount.start();
+              disCount.start();
+              memCount.start();
+              started = true;
+           }
+        } 
+    }); 
+    new WOW().init();
+    </script>
+  </body>
+</html>
